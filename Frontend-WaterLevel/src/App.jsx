@@ -21,7 +21,7 @@ function App(){
     }
 
   function WaterChart(props){
-       // let capacityObj = {data: [4552000,3537577,2447650,2400000,2041000,2030000,1602000], backgroundColor: ['rgb(120,199,227)']}
+     
 let capacityObj = {data: [45,35,24,24,20,20,16], backgroundColor: ['rgb(120,199,227)'],barThickness: 30}
   if(props.water){
     let n = props.water.length;
@@ -170,7 +170,7 @@ California's water managers monitor the reservoirs carefully, and the state publ
     </div>  
     </div>
       </section>
-    ) //change month/afetr see more 
+    ) 
   }
 
   if(seeMore){
