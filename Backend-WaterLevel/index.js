@@ -56,17 +56,9 @@ async function getWaterData(month,year) {
   const end = `${year}-${months}-2`;
   console.log(end);
   const api_url =  `https://cdec.water.ca.gov/dynamicapp/req/JSONDataServlet?Stations=SHA,ORO,CLE,NML,SNL,DNP,BER&SensorNums=15&dur_code=M&Start=${start}&End=${end}`;
-  // send it off
+  
   let fetchResponse = await fetch(api_url);
   let wdata = await fetchResponse.json();
-  
-// console.log(wdata);
-//   let waterData = []
-  //   for(const w of wdata){
-//     waterData.push(w.value);
-//     console.log(waterData);
-//   }
-//   let final = JSON.stringify(waterData);
   
   return wdata;
 }
